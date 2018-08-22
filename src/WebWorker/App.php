@@ -831,7 +831,7 @@ class App extends Worker
         Http::header($str);
     }
 
-    public function end($msg){
+    public function end($msg=''){
         if (PHP_SAPI != 'cli') {
             exit($msg);
         }
